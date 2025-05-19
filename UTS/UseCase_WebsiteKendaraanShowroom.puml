@@ -1,0 +1,28 @@
+@startuml
+top to bottom direction
+
+actor Pelanggan
+actor Admin
+
+rectangle "Website Informasi Kendaraan Showroom" {
+    usecase UC1 as "Lihat Daftar Mobil"
+    usecase UC2 as "Lihat Daftar Motor"
+    usecase UC3 as "Lihat Detail Kendaraan"
+    
+    usecase UC5 as "Kelola Data Mobil"
+    usecase UC6 as "Kelola Data Motor"
+    usecase UC7 as "Lihat dan Respon Permintaan Info"
+    usecase UC8 as "Pilih Kategori Kendaraan"
+    usecase UC9 as "Login Sistem"
+}
+
+Pelanggan --> UC1
+Pelanggan --> UC2
+Pelanggan --> UC3
+
+Admin --> UC5
+Admin --> UC6
+Admin --> UC7
+Admin --> UC8
+Admin --> UC9
+@enduml
