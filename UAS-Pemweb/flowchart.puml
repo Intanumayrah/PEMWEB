@@ -1,0 +1,21 @@
+@startuml
+left to right direction
+
+actor Admin
+
+rectangle "Sistem Reservasi Bioskop" {
+  (Login ke Sistem)
+  (Kelola Data Film)
+  (Kelola Jadwal Penayangan)
+  (Atur Tempat Duduk)
+  (Lihat Data Reservasi)
+  (Cetak Laporan Reservasi)
+}
+
+Admin --> (Login ke Sistem)
+Admin --> (Kelola Data Film)
+Admin --> (Kelola Jadwal Penayangan)
+Admin --> (Atur Tempat Duduk)
+Admin --> (Lihat Data Reservasi)
+Admin --> (Cetak Laporan Reservasi)
+@enduml
